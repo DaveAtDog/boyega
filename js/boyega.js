@@ -3,6 +3,8 @@ var Dog = Dog ||
 
 Dog.Boyega = (function()
 {
+	var positionIn;
+	var positionOut;
 
 	var container = document.createElement('div');
 
@@ -20,8 +22,7 @@ Dog.Boyega = (function()
 	trooper.height = 687;
 	trooper.width = 989;
 
-	var positionIn = window.innerHeight - trooper.height;
-	var positionOut = window.innerHeight;
+	updateProperties();
 
 	trooper.style.position = 'absolute';
 	trooper.style.top = positionOut + 'px';
@@ -59,5 +60,13 @@ Dog.Boyega = (function()
 		trooper.style.top = positionIn + 'px';
 
 		show();
+	}
+
+	window.onresize = updateProperties;
+
+	function updateProperties()
+	{
+		positionIn = window.innerHeight - trooper.height;
+		positionOut = window.innerHeight;
 	}
 })();
