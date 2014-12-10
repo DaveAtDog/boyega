@@ -11,8 +11,6 @@ Dog.Boyega = (function()
 	container.style.position = 'absolute';
 	container.style.left = 0;
 	container.style.top = 0;
-	container.style.width = '100%';
-	container.style.height = '100%';
 	container.style.overflow = 'hidden';
 	container.style.zIndex = 100000;
 
@@ -68,5 +66,7 @@ Dog.Boyega = (function()
 	{
 		positionIn = window.innerHeight - trooper.height;
 		positionOut = window.innerHeight;
+		container.style.width = window.innerWidth + 'px';
+		container.style.height = window.innerHeight + 'px';
 	}
 })();
