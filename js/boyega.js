@@ -12,6 +12,7 @@ Dog.Boyega = (function()
 	container.style.width = '100%';
 	container.style.height = '100%';
 	container.style.overflow = 'hidden';
+	container.style.zIndex = 100000;
 
 	var trooper = document.createElement('img');
 
