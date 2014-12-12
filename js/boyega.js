@@ -5,6 +5,7 @@ Dog.Boyega = (function()
 {
 	var positionIn;
 	var positionOut;
+  var audio = new Audio('awakening.mp3');
 
 	var container = document.createElement('div');
 
@@ -56,7 +57,7 @@ Dog.Boyega = (function()
 	function animateOut()
 	{
 		trooper.style.top = positionIn + 'px';
-
+    audio.play();
 		show();
 	}
 
