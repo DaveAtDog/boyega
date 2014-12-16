@@ -1,6 +1,8 @@
 boyega
 ======
 
+Now with sound! Thanks [Seth Broweleit](https://github.com/getsetbro).
+
 Add a little "Force Awakens" to your site…
 
 That's right... Now you can add a popup stormtrooper to your site.
