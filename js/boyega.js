@@ -5,7 +5,7 @@ Dog.Boyega = (function()
 {
 	var positionIn;
 	var positionOut;
-  var audio = new Audio('awakening.mp3');
+  var audio = new Audio('https://dl.dropboxusercontent.com/u/6490005/awakening.mp3');
 
 	var container = document.createElement('div');
 
